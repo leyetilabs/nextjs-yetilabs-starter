@@ -1,20 +1,39 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./src",
     "esModuleInterop": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true
+    "lib": [
+      "dom",
+      "ES2019"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "preserveConstEnums": true,
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "ES2019",
+    "tsBuildInfoFile": ".tsbuildinfo",
+    "useUnknownInCatchVariables": false
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ]
 }
